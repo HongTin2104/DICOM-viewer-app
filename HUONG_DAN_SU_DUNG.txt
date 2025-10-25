@@ -1,0 +1,65 @@
+# DICOM Viewer Pro - Hướng dẫn sử dụng
+
+## 📋 Mô tả
+**DICOM Viewer Pro** là ứng dụng chuyên nghiệp để chuyển đổi file DICOM (.dcm) thành ảnh PNG chất lượng cao.
+
+## 🚀 Cách sử dụng
+
+### 1. Chạy ứng dụng
+- Double-click vào file `DICOM_Viewer_Pro.exe`
+- Không cần cài đặt gì thêm!
+
+### 2. Chọn file DICOM
+- Click nút **"📂 Select Files"**
+- Chọn một hoặc nhiều file DICOM (.dcm)
+- Các file sẽ hiển thị trong danh sách
+
+### 3. Chọn thư mục lưu
+- Click nút **"📂 Browse"** để chọn thư mục lưu file PNG
+- Hoặc để mặc định (cùng thư mục với file DICOM)
+
+### 4. Tùy chọn chuyển đổi
+- ✅ **Normalize pixel values**: Chuẩn hóa giá trị pixel (0-255) - **Khuyến nghị bật**
+- 🔄 **Invert colors**: Đảo ngược màu sắc (nếu cần)
+- 🎨 **PNG Quality**: Chất lượng PNG (50-100%) - **Mặc định 95%**
+
+### 5. Chuyển đổi
+- Click nút **"🚀 Convert DICOM to PNG"**
+- Theo dõi tiến trình trên thanh progress
+- Kết quả sẽ được lưu vào thư mục đã chọn
+
+## ✨ Tính năng nổi bật
+
+- 🎯 **Batch Processing**: Xử lý nhiều file cùng lúc
+- 🖼️ **High Quality**: Chất lượng PNG cao (tùy chỉnh được)
+- 🎨 **Smart Normalization**: Tự động chuẩn hóa giá trị pixel
+- 🔄 **Color Inversion**: Đảo ngược màu sắc khi cần
+- 📊 **Progress Tracking**: Theo dõi tiến trình real-time
+- 🗑️ **File Management**: Quản lý danh sách file dễ dàng
+
+## 🛠️ Quản lý file
+
+- **Remove Selected**: Xóa file đã chọn (hoặc nhấn Delete)
+- **Clear All**: Xóa tất cả file
+- **Right-click**: Menu ngữ cảnh
+- **Refresh List**: Kiểm tra file còn tồn tại
+
+## ⚠️ Lưu ý quan trọng
+
+1. **File DICOM**: Chỉ hỗ trợ file .dcm chuẩn
+2. **Thư mục**: Đảm bảo có quyền ghi vào thư mục đích
+3. **Bộ nhớ**: File lớn có thể cần nhiều RAM
+4. **Backup**: Luôn backup file gốc trước khi chuyển đổi
+
+## 🆘 Xử lý lỗi
+
+- **"File does not exist"**: File đã bị di chuyển/xóa
+- **"Output directory does not exist"**: Chọn lại thư mục đích
+- **"Unsupported image format"**: File DICOM không hợp lệ
+
+## 📞 Hỗ trợ
+
+**Copyright (c) 2025 @Tins - All Rights Reserved**
+
+---
+*Ứng dụng hoàn toàn độc lập - không cần cài đặt Python hay thư viện nào khác!*
