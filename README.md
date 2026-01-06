@@ -1,150 +1,150 @@
 # DICOM to PNG Converter
 
-Ứng dụng Python để chuyển đổi file DICOM (.dcm) thành ảnh PNG với giao diện đồ họa thân thiện.
+This Python application converts DICOM (.dcm) files to PNG images with a user-friendly graphical interface.
 
-## Tính năng
+## Features
 
-- ✅ Chuyển đổi file DICOM thành PNG
-- ✅ **Batch processing** - Xử lý nhiều file cùng lúc
-- ✅ Giao diện GUI đơn giản và dễ sử dụng
-- ✅ Tùy chọn chuẩn hóa pixel values (0-255)
-- ✅ Tùy chọn đảo ngược màu sắc
-- ✅ Điều chỉnh chất lượng PNG
-- ✅ Hỗ trợ cả ảnh grayscale và color
-- ✅ Progress bar và thông báo trạng thái
-- ✅ Command line interface với batch mode
+- Convert DICOM files to PNG
+- **Batch processing** - Process multiple files at once
+- Simple and intuitive GUI
+- Option to normalize pixel values (0-255)
+- Option to invert colors
+- Adjust PNG quality
+- Supports both grayscale and color images
+- Progress bar and status notifications
+- Command line interface with batch mode
 
-## Yêu cầu hệ thống
+## System Requirements
 
-- Python 3.7 trở lên
+- Python 3.7 or above
 - Windows/Linux/macOS
 
-## Cài đặt
+## Installation
 
-1. **Clone hoặc tải về project:**
+1. **Clone or download the project:**
    ```bash
    git clone <repository-url>
    cd DICOM-viewer-app
    ```
 
-2. **Cài đặt các thư viện cần thiết:**
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-   Hoặc cài đặt thủ công:
+   Or install manually:
    ```bash
    pip install pydicom Pillow numpy
    ```
 
-## Sử dụng
+## Usage
 
-### Cách 1: Chạy ứng dụng GUI
+### Option 1: Run GUI Application
 
 ```bash
 python dicom_to_png_converter.py
 ```
 
-### Cách 2: Sử dụng từ command line
+### Option 2: Use the Command Line
 
-#### Single file mode:
+#### Single File Mode:
 ```bash
 python cli_converter.py input.dcm output.png
 ```
 
-#### Batch processing mode:
+#### Batch Processing Mode:
 ```bash
 python cli_converter.py --batch --input-dir folder_input --output-dir folder_output
 ```
 
-## Hướng dẫn sử dụng GUI
+## GUI Usage Guide
 
-1. **Mở ứng dụng:**
-   - Chạy `python dicom_to_png_converter.py`
-   - Giao diện sẽ hiện ra
+1. **Launch the Application:**
+   - Run `python dicom_to_png_converter.py`
+   - The graphical interface will appear.
 
-2. **Chọn file DICOM:**
-   - **Chọn file đơn**: Nhấn "Chọn file đơn" để chọn một file DICOM
-   - **Chọn nhiều file**: Nhấn "Chọn nhiều file" để chọn nhiều file DICOM cùng lúc
-   - Danh sách file đã chọn sẽ hiển thị trong Listbox
-   - Có thể xóa file đã chọn hoặc xóa tất cả
+2. **Select DICOM Files:**
+   - **Single File:** Click "Select Single File" to choose one DICOM file.
+   - **Multiple Files:** Click "Select Multiple Files" to choose multiple DICOM files at once.
+   - The selected files will appear in the list box.
+   - You can remove individual items or clear all files.
 
-3. **Chọn thư mục xuất:**
-   - Nhấn nút "Browse" bên cạnh "Thư mục xuất PNG"
-   - Chọn thư mục để lưu file PNG
+3. **Select the Output Folder:**
+   - Click the "Browse" button next to "Output PNG Folder."
+   - Choose the folder to save PNG files.
 
-4. **Tùy chỉnh:**
-   - **Normalize pixel values**: Chuẩn hóa giá trị pixel về khoảng 0-255 (khuyến nghị bật)
-   - **Invert colors**: Đảo ngược màu sắc (tùy chọn)
-   - **Chất lượng PNG**: Điều chỉnh từ 50-100%
+4. **Customization Options:**
+   - **Normalize Pixel Values:** Normalize pixel values to a 0-255 range (recommended to enable).
+   - **Invert Colors:** Option to invert colors (optional).
+   - **PNG Quality:** Adjust from 50-100%.
 
-5. **Chuyển đổi:**
-   - Nhấn nút "Convert DICOM to PNG"
-   - Progress bar sẽ hiển thị tiến trình xử lý
-   - Status label sẽ cập nhật file đang xử lý
-   - Chờ quá trình chuyển đổi hoàn tất
-   - File PNG sẽ được lưu trong thư mục đã chọn
+5. **Convert Files:**
+   - Click the "Convert DICOM to PNG" button.
+   - The progress bar will show the processing progress.
+   - The status label will update with the current file being processed.
+   - Wait for the process to complete.
+   - PNG files will be saved in the selected output folder.
 
-## Cấu trúc project
+## Project Structure
 
 ```
 DICOM-viewer-app/
-├── dicom_to_png_converter.py    # Script GUI với batch processing
-├── cli_converter.py             # Script CLI với batch mode
-├── test_batch.py               # Script test batch processing
-├── simple_test.py              # Script test đơn giản
-├── requirements.txt            # Danh sách thư viện cần thiết
-├── README.md                   # Hướng dẫn này
-└── run_gui.bat                # Script batch Windows
+├── dicom_to_png_converter.py    # GUI script with batch processing
+├── cli_converter.py             # CLI script with batch mode
+├── test_batch.py                # Batch processing test script
+├── simple_test.py               # Simple test script
+├── requirements.txt             # Dependencies list
+├── README.md                    # This guide
+└── run_gui.bat                  # Windows batch script
 ```
 
-## Xử lý lỗi thường gặp
+## Common Issues
 
-### Lỗi "ModuleNotFoundError"
+### "ModuleNotFoundError" Error
 ```bash
 pip install -r requirements.txt
 ```
 
-### Lỗi "File DICOM không tồn tại"
-- Kiểm tra đường dẫn file có đúng không
-- Đảm bảo file có extension .dcm
+### "DICOM file not found" Error
+- Verify the file path is correct.
+- Ensure the file has a .dcm extension.
 
-### Lỗi "Unsupported image format"
-- File DICOM có thể có định dạng không được hỗ trợ
-- Thử bật tùy chọn "Normalize pixel values"
+### "Unsupported Image Format" Error
+- The DICOM file might have an unsupported format.
+- Try enabling the "Normalize Pixel Values" option.
 
-### Ảnh xuất ra bị tối hoặc sáng quá
-- Thử bật/tắt tùy chọn "Invert colors"
-- Đảm bảo "Normalize pixel values" được bật
+### Output Image is Too Dark or Bright
+- Try toggling the "Invert Colors" option.
+- Ensure "Normalize Pixel Values" is enabled.
 
 ## API Reference
 
 ### Class DICOMToPNGConverter
 
 #### Methods:
-- `browse_input_file()`: Chọn file DICOM đầu vào
-- `browse_output_dir()`: Chọn thư mục xuất PNG
-- `normalize_pixel_array(pixel_array)`: Chuẩn hóa mảng pixel
-- `convert_dicom_to_png()`: Thực hiện chuyển đổi
+- `browse_input_file()`: Select input DICOM file.
+- `browse_output_dir()`: Select output folder for PNG files.
+- `normalize_pixel_array(pixel_array)`: Normalize pixel array values.
+- `convert_dicom_to_png()`: Perform file conversion.
 
-## Đóng góp
+## Contributing
 
-Nếu bạn muốn đóng góp vào project:
+If you wish to contribute to the project:
 
-1. Fork repository
-2. Tạo branch mới cho tính năng của bạn
-3. Commit các thay đổi
-4. Push lên branch
-5. Tạo Pull Request
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Commit your changes.
+4. Push to your branch.
+5. Create a Pull Request.
 
 ## License
 
-MIT License - Xem file LICENSE để biết thêm chi tiết.
+MIT License - See the LICENSE file for details.
 
-## Liên hệ
+## Contact
 
-Nếu có vấn đề hoặc câu hỏi, vui lòng tạo issue trên GitHub.
+For issues or questions, please open an issue on GitHub.
 
 ---
 
-**Lưu ý:** Ứng dụng này được thiết kế cho mục đích giáo dục và nghiên cứu. Đối với các ứng dụng y tế thương mại, vui lòng đảm bảo tuân thủ các quy định về DICOM và y tế.
+**Note:** This application is designed for educational and research purposes. For commercial medical applications, ensure compliance with DICOM and medical regulations.
